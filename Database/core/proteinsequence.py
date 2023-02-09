@@ -50,14 +50,12 @@ class ProteinSequence(sdRDM.DataModel):
         description="NCBI Taxonomy ID to identify the organism", default=None
     )
 
-    amino_acid_mass: List[str] = Field(
-        description="Protein mass in Da", default_factory=ListPlus
-    )
+    protein_mass: Optional[str] = Field(description="Protein mass in Da", default=None)
 
     __repo__: Optional[str] = PrivateAttr(
         default="git://github.com/maxim945/TestDatabase-For-Lars.git"
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="cd8558ce35d7c6afa5b31128febb8cb630335fa3"
+        default="f8d28c44e558d07e80cca7a44627169997d12bd0"
     )

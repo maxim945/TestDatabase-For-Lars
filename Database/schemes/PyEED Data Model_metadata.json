@@ -19,9 +19,8 @@
       "amino_acid_sequence_length": {
         "description": "Number of amino acids"
       },
-      "amino_acid_mass": {
-        "description": "Protein mass in Da",
-        "multiple": "True"
+      "protein_mass": {
+        "description": "Protein mass in Da"
       },
       "domain": {
         "description": "Taxonomy of the host organism (domain)"
