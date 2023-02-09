@@ -17,16 +17,6 @@ class ProteinSequence(sdRDM.DataModel):
         xml="@id",
     )
 
-    name: str = Field(..., description="Systematic name of the protein.")
-
-    amino_acid_sequence: str = Field(
-        ..., description="The amino acid sequence of the protein sequence object."
-    )
-
-    ncbi_taxonomy_id: str = Field(
-        ..., description="NCBI Taxonomy ID to identify the organism"
-    )
-
     uniprot_id: Optional[str] = Field(
         description="Identifier for the UniProt database", default=None
     )
@@ -51,10 +41,23 @@ class ProteinSequence(sdRDM.DataModel):
         description="Taxonomy of the host organism (kingdom or phylum)", default=None
     )
 
+    name: Optional[str] = Field(
+        description="Systematic name of the protein.", default=None
+    )
+
+    amino_acid_sequence: Optional[str] = Field(
+        description="The amino acid sequence of the protein sequence object.",
+        default=None,
+    )
+
+    ncbi_taxonomy_id: Optional[str] = Field(
+        description="NCBI Taxonomy ID to identify the organism", default=None
+    )
+
     __repo__: Optional[str] = PrivateAttr(
         default="git://github.com/maxim945/TestDatabase-For-Lars.git"
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="653ab96202c8b34c3e66ced1de7634f83b9c5832"
+        default="b91ff28b09429a8edd4a038c21c5897acefefddc"
     )
