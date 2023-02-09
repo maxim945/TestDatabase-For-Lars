@@ -11,13 +11,13 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
 - __uniprot_id__
   - Type: string
   - Description: Identifier for the UniProt database
-- __name*__
+- __name__
   - Type: string
   - Description: Systematic name of the protein.
 - __organism__
   - Type: string
   - Description: Name of the host organism
-- __amino_acid_sequence*__
+- __amino_acid_sequence__
   - Type: string
   - Description: The amino acid sequence of the protein sequence object.
 - __amino_acid_sequence_length__
@@ -33,6 +33,6 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
 - __kingdom_phylum__
   - Type: string
   - Description: Taxonomy of the host organism (kingdom or phylum)
-- __ncbi_taxonomy_id*__
+- __ncbi_taxonomy_id__
   - Type: string
   - Description: NCBI Taxonomy ID to identify the organism
