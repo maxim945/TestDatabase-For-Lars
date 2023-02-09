@@ -19,7 +19,7 @@
       "amino_acid_sequence_length": {
         "description": "Number of amino acids"
       },
-      "protein_mass": {
+      "amino_acid_mass": {
         "description": "Protein mass in Da",
         "multiple": "True"
       },
