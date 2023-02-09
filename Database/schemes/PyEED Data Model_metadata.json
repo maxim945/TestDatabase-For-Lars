@@ -1,0 +1,38 @@
+{
+  "docstring": "PyEED is a Python-encoded data model of an Enzyme Engineering Database. It supports the scalable and reproducible analysis of sequence and structure data of protein families, and makes data and processes findable, accessible, interoperable, and reusable according to the FAIR data principles.",
+  "enums": [],
+  "external": {},
+  "ProteinSequence": {
+    "attributes": {
+      "uniprot_id": {
+        "description": "Identifier for the UniProt database"
+      },
+      "name": {
+        "description": "Systematic name of the protein."
+      },
+      "organism": {
+        "description": "Name of the host organism"
+      },
+      "amino_acid_sequence": {
+        "description": "The amino acid sequence of the protein sequence object."
+      },
+      "amino_acid_sequence_length": {
+        "description": "Number of amino acids"
+      },
+      "protein_mass": {
+        "description": "Protein mass in Da",
+        "multiple": "True"
+      },
+      "domain": {
+        "description": "Taxonomy of the host organism (domain)"
+      },
+      "kingdom_phylum": {
+        "description": "Taxonomy of the host organism (kingdom or phylum)"
+      },
+      "ncbi_taxonomy_id": {
+        "description": "NCBI Taxonomy ID to identify the organism"
+      }
+    },
+    "docstring": null
+  }
+}
