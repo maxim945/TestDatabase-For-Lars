@@ -23,10 +23,9 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
 - __amino_acid_sequence_length__
   - Type: string
   - Description: Number of amino acids
-- __amino_acid_mass__
+- __protein_mass__
   - Type: string
   - Description: Protein mass in Da
-  - Multiple: True
 - __domain__
   - Type: string
   - Description: Taxonomy of the host organism (domain)
@@ -36,3 +35,5 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
 - __ncbi_taxonomy_id__
   - Type: string
   - Description: NCBI Taxonomy ID to identify the organism
+
+
